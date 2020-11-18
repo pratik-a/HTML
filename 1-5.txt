@@ -1,0 +1,384 @@
+chapter 1
+question 1
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	printf("Hello Ekarshi Open Source");
+	getch();
+}
+
+question 2
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	printf("Rollwala Computer Centre ,Department of Computer Science");
+	printf("Gujarat University , Navranpura Ahmedabad , 380009");
+	getch();
+}
+
+chapter 2
+
+question 1
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	printf("H\nE\nL\nL\nO");
+	getch();
+}
+
+question 2
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	printf("\nsize of int\t%d byte",sizeof(int));
+printf("\nsize of float\t%d byte",sizeof(float));
+printf("\nsize of double\t%d byte",sizeof(double));
+printf("\nsize of long\t%d byte",sizeof(long));
+printf("\nsize of longdouble\t%d byte",sizeof(long double));
+	getch();
+}
+
+question 3
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j;
+	for(i=0;i<4;i++)
+	{
+		for(j=0;j<=i;j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	getch();
+}
+
+chapter 3
+
+question 1
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x=3,y=2,w=0,z=9;
+	if(x>y && x>w && x>z)
+	{
+	printf("x is greater");
+	}
+	else if(y>w && y>z)
+	{
+	printf("y is greater");
+	}
+	else if(w>z)
+	{
+	printf("w is greater");
+	}
+	else
+	{
+	printf("z is greater");
+	}
+	getch();
+}
+
+question 2
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x=1,y=5,z=6;
+	 if(y<x && y<z)
+	{
+	printf("y is smaller");
+	}
+	else if(x<z)
+	{
+	printf("x is smaller");
+	}
+	else
+	{
+	printf("z is smaller");
+	}
+	getch();
+}
+
+question 3
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,y;
+	printf("enter value if x :\t");
+	scanf("%d",&x);
+	printf("enter value if x :\t");
+	scanf("%d",&y);	
+	printf("\nbefore swapping \n x=%d y=%d",x,y);
+	x=x+y;
+	y=x-y;
+	x=x-y;
+	printf("\nafter swapping \n x=%d y=%d",x,y);
+	getch();
+}
+	
+question 4
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,y;
+	printf("enter value if x :\t");
+	scanf("%d",&x);
+	printf("enter value if y :\t");
+	scanf("%d",&y);	
+	if(x==0 && y==0)
+	printf("both x and y are 0");
+	else if (x==0)
+	printf("x is 0");
+	else if(y==0)
+	printf("y is 0");
+	else
+	printf("x*y=%d \t x/y=%d",x*y,x/y);
+	getch();
+}
+
+chapter 4
+question 1
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	printf("11+22=%d \n",11+22);
+	printf("11-22=%d \n",11-22);
+	printf("11*22=%d \n",11*22);
+	printf("11/22=%d \n",11/22);
+	getch();
+}
+
+question 2
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,y;
+	printf("enter value if x :\t");
+	scanf("%d",&x);
+	printf("enter value if y :\t");
+	scanf("%d",&y);	
+	printf("x&y=%d \n",x&y);
+	printf("x|y=%d \n",x|y);
+	printf("x^y=%d \n",x^y);
+	printf("~x=%d ~y=%d \n",~x,~y);
+	getch();
+}
+
+question 3
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i=0;
+ for(i=1; i<=10;i++)
+ {
+ 	printf("float %d  octal %o hexadecimal %x \n",i,i,i);
+ }
+}
+
+question 4
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,y,z;
+	printf("enter value if x :\t");
+	scanf("%d",&x);
+	printf("enter value if y :\t");
+	scanf("%d",&y);
+	printf("\nbefore swapping \n x=%d y=%d",x,y);	
+	z=x^y;
+	x=z^x;
+	y=z^y;
+	printf("\nafter swapping \n x=%d y=%d",x,y);
+	getch();
+}
+
+question 5
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,sum=0,num;
+	printf("enter value if x :\t");
+	scanf("%d",&x);
+	while(x!=0)
+	{
+		num=x%10;
+		sum=sum*10+num;
+		x=x/10;
+	}
+	printf("reverse of x is :\t%d",sum);
+	getch();
+}
+
+question 6
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,sum=0,num,fact=1,temp;
+	printf("enter value if x :\t");
+	scanf("%d",&x);
+	temp=x;
+	while(x!=0)
+	{
+		fact=1;
+		num=x%10;
+		while(num>0)
+		{
+			fact=fact*num;
+			num--;
+		}
+		sum=sum+fact;
+		x=x/10;
+	}
+	if(sum==temp)
+	printf("num %d is special",sum);
+	getch();
+}
+
+chapter 5
+
+question 1
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,y;
+	printf("enter value if x :\t");
+	scanf("%d",&x);
+	printf("enter value if y :\t");
+	scanf("%d",&y);	
+	printf("x+y=%d \n",x+y);
+	printf("x-y=%d \n",x-y);
+	printf("x*y=%d \n",x*y);
+	printf("x/y=%d \n",x/y);
+	getch();
+}
+
+question 2
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x=999999999;
+	printf("x=%d",x);
+	getch();
+}
+
+question 3
+
+#include<stdio.h>
+#include<conio.h>
+void max(float i,float j,float k)
+{
+	if(i>j && i>k)
+	{
+	printf("\ni is greater");
+	}
+	else if(j>k)
+	{
+	printf("\nj is greater");
+	}
+	else
+	{
+	printf("\nk is greater");
+	}
+}
+void min(float i,float j,float k)
+{
+	 if(i<j && i<k)
+	{
+	printf("\ni is smaller");
+	}
+	else if(j<k)
+	{
+	printf("\nj is smaller");
+	}
+	else
+	{
+	printf("\nk is smaller");
+	}
+}
+void main()
+{
+	float i,j,k;
+	printf("\nenter value if i :\t");
+	scanf("%f",&i);
+	printf("\nenter value if j :\t");
+	scanf("%f",&j);
+	printf("\nenter value if k :\t");
+	scanf("%f",&k);	
+	max(i,j,k);
+	min(i,j,k);
+	getch();
+}	
+
+question 4
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j,sum=0,mult=1;
+	for(i=1;i<=6;i++)
+	{
+		mult=1;
+		for(j=1;j<=i;j++)
+		{
+			mult=mult*i;
+		}
+		sum+=mult;
+	}
+	printf("x=%d",sum);
+}
+
+question 5
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j,sum=0,mult=1;
+	for(i=1;i<=10;i++)
+	{
+		mult=1;
+		for(j=1;j<=2;j++)
+		{
+			mult=mult*i;
+		
+		}
+			printf("\nsquare of %d =%d",i,mult);
+		sum+=mult;
+	}
+	printf("\nx=%d",sum);
+}
