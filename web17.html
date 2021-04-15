@@ -1,0 +1,66 @@
+<!DOCTYPEHTML>
+<html>
+	<head>
+		<script type="text/javascript">
+			function world()
+			{
+			alert("world is here");
+			}
+		</script>
+		<style>
+			p.dotted
+			{
+				border-style:dotted;
+				background-color:yellow;
+				}
+			p.double
+			{
+				border-style:double;
+				background-color:blue;
+				margin-top:100px;
+				margin-bottom:100px;
+				margin-left:150px;
+				margin-right:80px;
+				}
+			p.inset
+			{
+				border-style:inset;
+				background-color:red;
+				padding-top:50px;
+				padding-bottom:50px;
+				padding-left:130px;
+				padding-right:40px;
+				}
+			body{
+			background-color:green;
+			}
+			h1
+			{
+			color:brown;
+			}
+			p.one
+			{
+				border-style:solid;
+				border-width:medium;
+				border-color:#FF1010;
+			}
+			p.two
+			{
+				border-style:solid;
+				border-width:10px;
+				border-color:rgb(210,20,241);
+				}
+		</style>
+	</head>
+	<body>
+		<h1>hello world</h1>
+		<h2>world is here</h2>
+		<p class="dotted" style="color:pink">dotted</p>
+		<p class="double">double</p>
+		<p class="inset">inset</p>
+				<p class="one">inset</p>
+						<p class="two">inset</p>
+		
+		<input type="button" onclick="world()" value="hello">
+	</body>
+</html>
